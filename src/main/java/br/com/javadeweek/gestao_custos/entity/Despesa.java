@@ -34,12 +34,21 @@ public class Despesa {
     @CreationTimestamp
     private LocalDate data_criacao;
 
+    public LocalDate getData_criacao() {
+        return data_criacao;
+    }
+
     public UUID getId() {
         return id;
     }
 
+
     public void setId(UUID id) {
         this.id = id;
+    }
+
+    public void setData_criacao(LocalDate data_criacao) {
+        this.data_criacao = data_criacao;
     }
 
     public String getDescricao() {
